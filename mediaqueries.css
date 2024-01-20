@@ -1,0 +1,168 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+    
+  }
+  .about-containers {
+    flex-wrap: wrap;
+    gap: -20px;
+  }
+  .profiles{
+    margin-top: 20%;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+    
+  }
+  #hamburger-nav {
+    display: flex;
+    margin-top: -5%;
+    /* position: fixed;
+    z-index: 99;
+    background: transparent;
+    top:-5%; */
+  }
+  #hamburger-icon{
+    position: fixed;
+    
+  }
+  #experience,
+  .experience-details-container{
+    /* margin-top: 2rem;
+    gap: 2rem; */
+    margin-top: 10%;
+  }
+  .article-container{
+    gap: 1rem;
+  }
+  .article-container1{
+    
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+    margin-top: -70px;
+  }
+ 
+  .details-container{
+    margin-top: -10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact{
+    height: 40vh;
+    
+  }
+  .co{
+    margin-top: 100%;
+    margin-bottom: 0%;
+  }
+  input,textarea{
+    width: 88%;
+  }
+  footer {
+    height: 40vh;
+    margin-top: 50%;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-upper-container{
+    width: 80%;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+    
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .section__text__p22{
+    font-size: 1.25rem;
+    margin-top: -3%;
+    margin-bottom: 5%;
+  }
+  .section__text__p1{
+    margin-top: 80px;
+  }
+  .section__text__p11{
+    margin-top: -40%;
+  }
+  .title {
+    font-size: 2rem;
+    
+  }
+  .text-container {
+    text-align: justify;
+  }
+  
+  .nav-links-container{
+    margin-top: 90%;
+  }
+  ul{
+    margin-top: 90%;
+    
+  }
+  .fo{
+    margin-top: 20%;
+    
+  }
+}
