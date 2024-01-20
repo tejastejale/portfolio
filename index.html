@@ -625,6 +625,11 @@
       <h1 class="title" style="margin-bottom: -2%;">Contact Me</h1>
       <div class="contact-info-upper-container">
         <form action="https://formsubmit.co/dde861e1a0f82e5cd637179caf5abdb4" method="POST">
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none;">
+          <!--Disable Capcha-->
+          <input type="hidden" name="_captcha" value="false">
+          
           <input type="text" placeholder="Full Name" name="name"> 
           <input type="email" placeholder="Email" name="email">
           <input type="tel" placeholder="Phone" name="phone">
