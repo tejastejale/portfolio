@@ -107,7 +107,19 @@
   }
   .contact-info-upper-container{
     width: 80%;
+    display: flex;
+    justify-content: space-around;
+    
+    button{
+      text-align: center;
+      height: 35px;
+      width: 92%;
+      margin: 0;
+      margin-left: 10px;
+      justify-content: space-around;
+    }
   }
+  
   .contact-info-container {
     margin: 0;
   }

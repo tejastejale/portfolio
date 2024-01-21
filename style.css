@@ -460,7 +460,8 @@ article .icon {
   width: 50%;
   
   /* margin-bottom: 100%; */
-  button{
+  
+    button{
     width: 50%;
     margin-left: 25%;
     background-color: whitesmoke;
@@ -472,12 +473,14 @@ article .icon {
     border-width: 0.5px;
     height: 30px;
     transition: .1s;
+    z-index: 10;
   }
   button:active{
-    scale: 95%;
+    scale: 93%;
     
   }
-}
+  }
+
 
 .contact-info-container {
   display: flex;
