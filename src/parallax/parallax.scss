@@ -1,0 +1,54 @@
+.parallax{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+h1{
+    font-size: 80px;
+    // margin-top: 400px;
+}
+.hh1{
+    //margin-top: 400px;
+}
+.mountains{
+    background-image: url("/mountains.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+}
+.shooting{
+    background-image: url("/shoting.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    margin-top: 0px;
+}
+.planets{
+    background-image: url("/planets.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    margin-top: 500px;
+}
+.stars{
+    background-image: url("/stars.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}

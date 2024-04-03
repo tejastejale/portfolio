@@ -1,0 +1,71 @@
+.contact{
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin:0px 10% 0px 10%;
+    
+    .phone{
+        // background-color: red;
+        position: absolute;
+        stroke: white;
+        
+        svg{
+            width: 500px;
+            height: 400px;
+            filter: invert(100%);
+            
+        }
+    }
+
+    .formc{
+        flex: 1;
+        form{
+            display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    input,textarea{
+        padding: 20px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        border-radius: 5px;
+    }
+        }
+        
+    h1{
+        font-size: 90px;
+        line-height: 80px;
+    }
+    .textc{
+        flex: 1;        
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    span{
+        font-weight: 300px;
+    }
+ 
+    button{
+        padding: 20px;
+        border: none;
+        background-color: white;
+        color: #0c0c1d;
+        cursor: pointer;
+        border-radius: 7px;
+        font-weight: 500;
+    }
+    button:hover{
+        transition: .3s;
+        box-shadow:
+        0 0 7px skyblue,
+        0 0 10px white;
+   
+    }
+
+
+    }

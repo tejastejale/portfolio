@@ -1,0 +1,103 @@
+.hero{
+    height:calc(100vh - 100px);
+   background: linear-gradient(180deg,#0c0c1d,#161642);
+    overflow: hidden;
+    position: relative;
+
+    .wrapper{
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
+        margin-left: 8.2%;
+    }
+
+    .textcon{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+    .simg{
+        width: 50px; 
+    }
+
+    h2{
+        font-size: 66px;
+        transition: 1s;
+    }
+
+    h1{
+        font-size: 30px;
+        color: skyblue;
+        letter-spacing: 2px;
+        transition: 1s;
+
+    } 
+    h1:hover{
+        color: skyblue;
+        text-shadow:
+        0 0 7px skyblue,
+        0 0 70px skyblue;
+    }
+    // h2:hover{
+    //     color: skyblue;
+    //     text-shadow:
+    //     0 0 3px skyblue,
+    //     0 0 50px skyblue;
+    // }
+
+    .imgcon{
+        height: 0;
+        top:0;
+        right: 0;
+        margin-right: -280px;
+        margin-top: -30px;
+        position: absolute;
+        // width: 1000px;
+        background-color: linear-gradient(180deg,#0c0c1d,#161642);
+        background: linear-gradient(180deg,#0c0c1d,#161642);   
+       img{
+        max-width: 1300px;
+        width: 1250px;
+        // height: 2000px;
+        display: flex;
+       }
+    }
+
+    a{
+        cursor: pointer;
+    }
+    
+    .buttons{
+        cursor: pointer;
+        z-index: 1;
+        display: inline-flex;
+    }
+    button{
+        padding:20px;
+        border:1px solid white;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        margin-right: 20px;
+        cursor: pointer;
+        font-weight: 300px;
+        z-index: 5;
+
+    }
+    h3{
+        z-index: 1;
+    }
+    .slidetext{
+        position: absolute;
+        font-size: 60vh;
+        bottom: -120px;
+        white-space: nowrap;
+        color: #ffffff09;
+        width:50%;
+        font-weight: bold;
+        z-index: 0;
+
+    }
+}
