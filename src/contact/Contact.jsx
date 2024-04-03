@@ -1,84 +1,97 @@
 import "./contact.scss";
 import "./butbubble.scss";
-import {motion,useInView,useSpring} from "framer-motion";
-import emailjs from '@emailjs/browser';
+import { motion, useInView, useSpring } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { useRef } from "react";
 
-
-
-const variants={
-    initial:{
-        y:500,
-        opacity:0,
+const variants = {
+  initial: {
+    y: 500,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.1,
     },
-    animate:{
-        y:0,
-        opacity:1,
-        transition:{
-            duration:0.5,
-            staggerChildren:0.1,
-        }
-    }
-}
+  },
+};
 
 // var animateButton = function(e) {
 
 //     e.preventDefault;
 //     //reset animation
 //     e.target.classList.remove('animate');
-    
+
 //     e.target.classList.add('animate');
 //     setTimeout(function(){
 //       e.target.classList.remove('animate');
 //     },700);
 //   };
-  
+
 //   var bubblyButtons = document.getElementsByClassName("bubbly-button")
 //   for (var i = 0; i < bubblyButtons.length; i++) {
 //     bubblyButtons[i].addEventListener('click', animateButton, false);
 //   }
 
-const Contact=()=>{
-    const scaleX= useSpring({
-        stiffness:50,
-        damping:8,
-    });
-    const formRef=useRef();
+const Contact = () => {
+  const scaleX = useSpring({
+    stiffness: 50,
+    damping: 8,
+  });
+  const formRef = useRef();
 
-    const [error, setError]=useState(false);
-    const [success, setSuccess]=useState(false);
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs.sendForm('service_g6847wv', 'template_j73mvol', formRef.current, 'mKccigPOPJxM9w7Ys')
-          .then((result) => {
-              setSuccess(true)
-          }, (error) => {
-            console.log(error.text);
-          });
-      };
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    return(
-        <motion.div id="contact" className="contact" variants={variants} initial="initial" whileInView="animate">
-            <motion.div className="textc" variants={variants}>
-            <h1 variants={variants}>Let's Work Together</h1>
-                    <motion.div className="item" variants={variants}>
-                        <h2>Mail</h2>
-                        <span>tejastejale13@gmail.com</span>
-                    </motion.div>
-                    <motion.div className="item" variants={variants}>
-                        <h2>Address</h2>
-                        <span>Golf-club signal,Trambaknaka,Nashik,422002</span>
-                    </motion.div>
-                    <motion.div className="item" variants={variants}>
-                        <h2>Phone</h2>
-                        <span>+91-7350692966</span>
-                    </motion.div> 
-            </motion.div>
-            <motion.div className="formc">
-            {/* <motion.div className="phone" initial={{opacity:1}} whileInView={{opacity:0}} transition={{delay:2, duration:1}}>
+    emailjs
+      .sendForm(
+        "service_g6847wv",
+        "template_j73mvol",
+        formRef.current,
+        "mKccigPOPJxM9w7Ys"
+      )
+      .then(
+        (result) => {
+          setSuccess(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  return (
+    <motion.div
+      id="contact"
+      className="contact"
+      variants={variants}
+      initial="initial"
+      whileInView="animate"
+    >
+      <motion.div className="textc" variants={variants}>
+        <h1 variants={variants}>Let's Work Together</h1>
+        <motion.div className="item" variants={variants}>
+          <h2>Mail</h2>
+          <span>tejastejale13@gmail.com</span>
+        </motion.div>
+        <motion.div className="item" variants={variants}>
+          <h2>Address</h2>
+          <span>Golf-club signal, Trambaknaka, Nashik, 422002</span>
+        </motion.div>
+        <motion.div className="item" variants={variants}>
+          <h2>Phone</h2>
+          <span>+91-7350692966</span>
+        </motion.div>
+      </motion.div>
+      <motion.div className="formc">
+        {/* <motion.div className="phone" initial={{opacity:1}} whileInView={{opacity:0}} transition={{delay:2, duration:1}}>
             <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
             <g>
                 <g>
@@ -108,17 +121,29 @@ const Contact=()=>{
             </g>
             </svg> 
             </motion.div>*/}
-                <motion.form ref={formRef} onSubmit={sendEmail}>
-                    <input type="text" required placeholder="Name" name="from_name"></input>
-                    <input type="email" required placeholder="Mail" name="email"></input>
-                    <textarea rows={8} required placeholder="Message" name="message"></textarea>
-                    <button type="submit" value={"Send"}>Submit</button>
-                    {error && error.text}
-                    {success && "I'll surely get back to you..."}
-                    {/* <button className="bubbly-button">Submit</button> */}
-                    </motion.form>
-                </motion.div>
-        </motion.div>
-    )
-}
+        <motion.form ref={formRef} onSubmit={sendEmail}>
+          <input
+            type="text"
+            required
+            placeholder="Name"
+            name="from_name"
+          ></input>
+          <input type="email" required placeholder="Mail" name="email"></input>
+          <textarea
+            rows={8}
+            required
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button type="submit" value={"Send"}>
+            Submit
+          </button>
+          {error && error.text}
+          {success && "I'll surely get back to you..."}
+          {/* <button className="bubbly-button">Submit</button> */}
+        </motion.form>
+      </motion.div>
+    </motion.div>
+  );
+};
 export default Contact;

@@ -6,9 +6,9 @@ const MyComponent1 = () => {
     <div>
       <button>
         <Link
-          to="Homepage"  // Replace "sectionId" with the actual ID of the section you want to scroll to
+          to="Homepage"  
           smooth={true}
-          duration={500}  // Adjust the duration of the scroll animation (in milliseconds) as needed
+          duration={500} 
         >
           See Demo
         </Link>

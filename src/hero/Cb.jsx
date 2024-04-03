@@ -10,7 +10,7 @@ const MyComponent = () => {
           smooth={true}
           duration={500}  // Adjust the duration of the scroll animation (in milliseconds) as needed
         >
-          See the Latest Works
+          See the Works
         </Link>
       </button>
 
