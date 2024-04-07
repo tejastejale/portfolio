@@ -1,49 +1,44 @@
 @import "../app.scss";
-.navbar{
+.navbar {
+  height: 100px;
+  overflow: visible;
+  z-index: 4;
+  position: sticky;
+
+  h2 {
+    @include mobile {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  .wrapper {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 100px;
-    overflow: visible;
-    z-index: 4;
+    font-size: 30px;
     position: sticky;
 
-    // @include mobile{
-    //     justify-content: flex-end;
-    //     padding: 20px;
-    // }
+    @include mobile {
+      justify-content: flex-end;
+      padding: 20px;
+    }
+  }
+  .social {
+    position: sticky;
+    cursor: pointer;
 
-    h2{
-        @include mobile{
-            display: none;
-            visibility: hidden;
-        }
+    img {
+      @include mobile {
+        width: 30px;
+      }
     }
-    .wrapper{
-        max-width: 1366px;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100px;
-        font-size: 30px;
-        position: sticky;
-
-        @include mobile{
-            justify-content: flex-end;
-            padding: 20px;
-        }
+  }
+  .mail {
+    img {
+      scale: 130%;
     }
-    .social{
-        position: sticky;
-        cursor: pointer;
-
-        img{
-            @include mobile{
-                width: 30px;
-            }
-        }
-    }
-    .mail{
-        img{
-            scale: 130%;
-        }
-    }
+  }
 }
