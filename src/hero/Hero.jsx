@@ -55,7 +55,7 @@ const sliderVariants = {
 
 const handleDownloadClick = () => {
   const pdfUrl =
-    "https://drive.google.com/file/d/1XD5su2PntynnaOKrQcPHyYaIuO8oFzF9/view?usp=sharing";
+    "https://drive.google.com/file/d/1n4TeUqFQEe2UThPn_EDQKwfc9n7MM2cp/view?usp=sharing";
   window.open(pdfUrl, "_blank");
 };
 
