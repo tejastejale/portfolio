@@ -53,8 +53,11 @@ const sliderVariants = {
   },
 };
 const handleDownloadClick = () => {
-  const pdfUrl = "Tejas_Tejale.pdf";
-  window.open(pdfUrl, "_blank");
+  const pdfUrl = "/Tejas_Tejale.pdf";
+  const link = document.createElement("a");
+  link.href = pdfUrl;
+  link.download = "Tejas_Tejale.pdf";
+  link.click();
 };
 // const handleContactClick = () => {
 //     // Replace 'your_email@example.com' with your actual email address
