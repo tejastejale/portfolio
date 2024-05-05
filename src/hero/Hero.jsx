@@ -53,7 +53,7 @@ const sliderVariants = {
   },
 };
 const handleDownloadClick = () => {
-  const pdfUrl = "/pdf.pdf";
+  const pdfUrl = "Tejas_Tejale.pdf";
   window.open(pdfUrl, "_blank");
 };
 // const handleContactClick = () => {
