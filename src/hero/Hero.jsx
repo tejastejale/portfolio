@@ -52,27 +52,12 @@ const sliderVariants = {
     },
   },
 };
+
 const handleDownloadClick = () => {
-  const pdfUrl = "/Tejas_Tejale.pdf";
-  const link = document.createElement("a");
-  link.href = pdfUrl;
-  link.download = "Tejas_Tejale.pdf";
-  link.click();
+  const pdfUrl =
+    "https://drive.google.com/file/d/1XD5su2PntynnaOKrQcPHyYaIuO8oFzF9/view?usp=sharing";
+  window.open(pdfUrl, "_blank");
 };
-// const handleContactClick = () => {
-//     // Replace 'your_email@example.com' with your actual email address
-//     const email = 'tejastejale13@gmail.com';
-
-//     // Construct the mailto URL
-//     const mailtoURL = `mailto:${email}`;
-
-//     // Open the email client with the mailto URL
-//     window.location.href = mailtoURL;
-// };
-// const ContactButton = () => {
-//     const handleContactClick = () => {
-//       window.location.href = "mailto:tejastejale13@gmail.com";
-//     }}
 
 const Hero = () => {
   const handleContactClick = () => {
@@ -109,7 +94,6 @@ const Hero = () => {
               <motion.button onClick={handleDownloadClick}>
                 Download Resume
               </motion.button>
-              {/* <motion.button>See the Latest Works Below</motion.button> */}
             </motion.div>
             <motion.div className="simg" link to="/services">
               <motion.img
@@ -135,4 +119,5 @@ const Hero = () => {
     </div>
   );
 };
+
 export default Hero;
