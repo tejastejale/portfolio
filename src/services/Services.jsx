@@ -37,7 +37,7 @@ const Services = () => {
           I Focus on Helping Your Brand Grow <br />
           and Move Towards the Success More & More...
         </p>
-        <hr />
+        {/* <hr /> */}
       </motion.div>
       <motion.div className="titlec">
         <div className="title">
@@ -65,12 +65,13 @@ const Services = () => {
           </h2>
           <br></br>
           <p>
-            I'm a passionate web developer with expertise in HTML, CSS, JSX, and
-            ReactJS. I've successfully contributed to diverse web development
-            projects. My hands-on experience in WordPress development at
-            TechMark India has honed my skills in customization and feature-rich
-            implementations. I bring a unique perspective to crafting engaging
-            online experiences.<br></br>
+            I am a ReactJS developer with experience in building web apps,
+            working with Redux, and using Expo for React Native. During my
+            internship at Scalent Infotech, I contributed to a bulk calendar
+            invite software and have worked with Expo for React Native projects.
+            I also have a strong data science background and hands-on experience
+            with AI coding tools like Claude and GPT.
+            <br></br>
           </p>
         </div>
         <div className="box">

@@ -20,6 +20,7 @@
     align-items: center;
     gap: 20px;
     max-width: 1366px;
+    margin-right: 1rem;
 
     @include mobile {
       align-self: center;

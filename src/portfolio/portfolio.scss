@@ -32,6 +32,7 @@
     // }
     h1 {
       @include mobile {
+        z-index: 0;
         font-size: 45px;
         backdrop-filter: none;
       }
@@ -82,7 +83,7 @@
       align-content: center;
       justify-content: center;
       gap: 50px;
-      z-index: 32;
+      z-index: 0;
       @include mobile {
         flex-direction: column;
         margin-bottom: 20px;

@@ -13,6 +13,30 @@ const items = [
   },
   {
     id: 2,
+    title: "Bulk Calender",
+    img: "/bulkcal.jpg",
+    dec: "At Scalent Infotech, I contributed to the development of BulkCalendar, a software designed for sending bulk calendar invites efficiently. My role involved working with ReactJS to enhance the user interface and improve functionality, ensuring a seamless experience for scheduling and managing events at scale.",
+    link: "https://www.bulkcalendar.com",
+    gitlink: "",
+  },
+  {
+    id: 3,
+    title: "ArtyData Manager",
+    img: "/dataEntry.jpg",
+    dec: "I built a React Native project using Expo for the Nashik Artillery Military Unit. The app enabled users to store and append data locally and export it to an Excel file when needed. This project enhanced my skills in state management with Redux and efficient data handling.",
+    link: "",
+    gitlink: "https://github.com/tejastejale/myportfolio",
+  },
+  {
+    id: 4,
+    title: "Rapid Resque",
+    img: "/driver.jpg",
+    dec: "I developed an emergency response app using Expo, similar to Ola/Uber, but designed for ambulances, police, and fire brigades. The app enables users to request emergency services quickly, ensuring faster response times. It features real-time tracking, user-friendly navigation, and efficient dispatch management to enhance public safety.",
+    link: "",
+    gitlink: "https://github.com/tejastejale/Winjit-Data-Science-Project",
+  },
+  {
+    id: 5,
     title: "Winjit Hackathon Problem",
     img: "/hack.jpg",
     dec: "In my data science project, I conducted extensive Exploratory Data Analysis (EDA) and implemented diverse models to predict car prices. Leveraging statistical insights and machine learning algorithms, I developed a comprehensive understanding of pricing dynamics. This project showcases my analytical and predictive skills in the realm of automotive data analysis.",
@@ -20,7 +44,7 @@ const items = [
     gitlink: "https://github.com/tejastejale/Winjit-Data-Science-Project",
   },
   {
-    id: 3,
+    id: 6,
     title: "Password Strength Checker",
     img: "/pic2.jpg",
     dec: "A machine learning-powered solution designed to evaluate the strength of passwords and provide users with actionable insights to enhance their online security. Leveraging the Rainforest model in the realm of machine learning, this project analyzes various factors such as length, complexity, and uniqueness to determine the robustness of a password.",
@@ -28,7 +52,7 @@ const items = [
     gitlink: "https://github.com/tejastejale/Password_Strength_Checker",
   },
   {
-    id: 4,
+    id: 7,
     title: "Car Price Prediction",
     img: "/pic1.jpg",
     dec: "In my data science project, I conducted extensive Exploratory Data Analysis (EDA) and implemented diverse models to predict car prices. Leveraging statistical insights and machine learning algorithms, I developed a comprehensive understanding of pricing dynamics. This project showcases my analytical and predictive skills in the realm of automotive data analysis.",
@@ -36,7 +60,7 @@ const items = [
     gitlink: "https://github.com/tejastejale/DataScienceProjects",
   },
   {
-    id: 5,
+    id: 8,
     title: "Ecommance",
     img: "/File 3.jpg.avif",
     dec: "Designed and developed a sleek e-commerce homepage using ReactJS for a seamless user experience. Implemented responsive design and interactive components to enhance functionality. Leveraged my skills in front-end development to create an engaging and visually appealing entry point for the online store. View my portfolio for more projects.",
@@ -44,7 +68,7 @@ const items = [
     gitlink: "https://github.com/tejastejale/Ecommerce",
   },
   {
-    id: 6,
+    id: 9,
     title: "Allen Solly Clone",
     img: "/pic3.jpg",
     dec: "Created a nostalgic homage to Allen Solly's classic website through meticulous HTML and CSS craftsmanship. The clone pays tribute to the brand's timeless design, showcasing my proficiency in front-end development. A testament to my keen eye for detail and dedication to recreating a beloved digital experience.",
