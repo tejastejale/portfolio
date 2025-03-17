@@ -4,6 +4,10 @@ html {
   background: linear-gradient(180deg, #0c0c1d, #161642);
   cursor: default;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+
 .spann {
   h2 {
     font-weight: bold;

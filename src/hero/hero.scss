@@ -31,7 +31,7 @@
   }
   .simg {
     width: 50px;
-
+    z-index: 1;
     @include mobile {
       display: none;
     }

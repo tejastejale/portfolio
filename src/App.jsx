@@ -14,7 +14,7 @@ const App = () => {
         <Hero />
       </section>
 
-      <section>
+      <section id="whatido">
         <Parallax type="services" />
       </section>
 

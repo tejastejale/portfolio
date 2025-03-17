@@ -95,12 +95,18 @@ const Hero = () => {
                 Download Resume
               </motion.button>
             </motion.div>
-            <motion.div className="simg" link to="/services">
-              <motion.img
-                variants={textVariants}
-                animate="scrollbutton"
-                src="scroll.png"
-              ></motion.img>
+            <motion.div className="simg">
+              <Link
+                to="whatido" // Replace "sectionId" with the actual ID of the section you want to scroll to
+                smooth={true}
+                duration={150} // Adjust the duration of the scroll animation (in milliseconds) as needed
+              >
+                <motion.img
+                  variants={textVariants}
+                  animate="scrollbutton"
+                  src="scroll.png"
+                ></motion.img>
+              </Link>
             </motion.div>
           </motion.div>
         </div>
